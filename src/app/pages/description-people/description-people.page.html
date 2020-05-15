@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/people"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{people.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <h1>{{people.name}}</h1>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="people" slot="start"></ion-icon>
+      <ion-label>{{ people.birth_year }}</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card-content>
+    <ion-grid fixed>
+
+      <ion-row>
+        <ion-col size="4">
+          <p>Genero:</p>
+          <p>{{ people.gender }}</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Altura:</p>
+          <p>{{ people.height }} mts</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Peso:</p>
+          <p>{{ people.mass }} kg</p>
+        </ion-col>
+        <ion-item-divider></ion-item-divider>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+</ion-content>
+

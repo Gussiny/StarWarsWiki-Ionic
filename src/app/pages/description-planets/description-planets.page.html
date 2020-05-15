@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/planets"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{planets.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>{{planets.name}}</h1>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="planet" slot="start"></ion-icon>
+      <ion-label>{{planets.terrain}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card-content>
+    <ion-grid fixed>
+
+      <ion-row>
+        <ion-col size="4">
+          <p>Population:</p>
+          <p>{{ planets.population }}</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Diameter:</p>
+          <p>{{ planets.diameter }}</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Gravity:</p>
+          <p>{{ planets.gravity }}</p>
+        </ion-col>
+        <ion-item-divider></ion-item-divider>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          <p>Rotation Period:</p>
+          <p>{{ planets.rotation_period }}</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Orbital Period:</p>
+          <p>{{ planets.orbital_period }}</p>
+        </ion-col>
+        <ion-col size="4">
+          <p>Surface Water:</p>
+          <p>{{ planets.surface_water }}</p>
+        </ion-col>
+        <ion-item-divider></ion-item-divider>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-content>
